@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Doctor's Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Little Doctor's Adventure</h1>
+        <div id="progress-bar">
+            <div id="doctor-level">Level 1: Medical Student 🩺</div>
+            <div id="patients-helped">Patients Helped: 0</div>
+            <div id="doctor-score">Score: 0</div>
+        </div>
+        <div id="game-screen">
+            <div id="patient-area">
+                <div id="patient-info">
+                    <img id="patient-image" src="images/patients/patient1.svg" alt="Patient" />
+                    <div id="patient-details">
+                        <h2>Patient: <span id="patient-name">Emma</span></h2>
+                        <p id="patient-symptoms">Symptoms: Fever and headache</p>
+                        <p id="patient-severity" class="severity mild">Severity: MILD</p>
+                    </div>
+                </div>
+            </div>
+            <div id="doctor-tools">
+                <h3>Doctor's Tools:</h3>
+                <button onclick="useTool('thermometer')">🌡️ Thermometer</button>
+                <button onclick="useTool('stethoscope')">🩺 Stethoscope</button>
+                <button onclick="useTool('medicine')">💊 Medicine</button>
+                <button onclick="useTool('otoscope')">👂 Otoscope</button>
+                <button onclick="useTool('xray')">🩻 X-Ray</button>
+                <button onclick="useTool('bloodtest')">🩸 Blood Test</button>
+                <button onclick="useTool('neurological')">🧠 Neurological</button>
+            </div>
+            <div id="diagnosis-area">
+                <h3>Diagnosis:</h3>
+                <p id="diagnosis-text">Use your tools to help the patient!</p>
+            </div>
+            <button id="next-patient" onclick="nextPatient()" style="display:none;">Next Patient</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
