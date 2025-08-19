@@ -27,7 +27,7 @@ A fun educational game where kids learn about medical diagnosis by helping patie
 
 ## 🚀 Play Online
 
-[Play the Game Here](https://yourusername.github.io/little-doctors-adventure)
+[Play the Game Here](https://HiwotJewore.github.io/little-doctors-adventure)
 
 ## 📁 Files
 
